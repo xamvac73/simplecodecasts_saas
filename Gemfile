@@ -15,6 +15,9 @@ gem 'bootstrap-sass', '~> 3.3.7'
 
 gem 'jquery-rails'
 
+#use font awesome library for icons
+gem 'font-awesome-sass', '~> 5.2.0'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
