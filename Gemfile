@@ -13,6 +13,8 @@ gem 'sqlite3', group: [:development, :test]
 
 gem 'bootstrap-sass', '~> 3.3.7'
 
+gem 'jquery-rails'
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
