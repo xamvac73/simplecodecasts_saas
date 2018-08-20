@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180819101408) do
+ActiveRecord::Schema.define(version: 20180820005649) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20180819101408) do
     t.datetime "updated_at", null: false
     t.integer "plan_id"
     t.string "stripe_customer_token"
+    t.string "stripe_customer_tokens"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
