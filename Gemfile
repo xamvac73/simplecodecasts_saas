@@ -70,3 +70,6 @@ gem 'stripe', '>= 3.22.0'
 
 #use figaro to hide secret keys
 gem 'figaro', '~> 1.1.1'
+
+#use paperclip for image uploads
+gem 'paperclip', '~> 4.3.6'
