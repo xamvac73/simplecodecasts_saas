@@ -73,3 +73,8 @@ gem 'figaro', '~> 1.1.1'
 
 #use paperclip for image uploads
 gem 'paperclip', '~> 4.3.6'
+
+#use shrine for file uploads
+gem 'shrine', '~> 2.6.1'
+
+gem 'sequel', '~> 5.3.0'
