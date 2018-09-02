@@ -1,4 +1,4 @@
-<%= image_tag @user.profile.picture_url %>
+<%= image_tag @user.profile.logo.url(:medium) %>
 <%= @user.profile.first_name %> <%= @user.profile.last_name %>
 <%= @user.profile.job_title %><br/>
 <% if current_user.plan_id == 2 %>
