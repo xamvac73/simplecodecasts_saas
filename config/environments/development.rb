@@ -45,8 +45,6 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-7.0.8-Q16'
-
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 

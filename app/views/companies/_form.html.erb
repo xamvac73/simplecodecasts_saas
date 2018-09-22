@@ -1,4 +1,11 @@
-<%= form_for @profile, url: user_profile_path, :html => { :multipart => true } do |f| %>
+<%= form_for @company, url: user_companies_path do |f| %>
+
+    <div class="form-group">
+        <%= f.label :image %>
+        <%= f.hidden_field :image, value: @company.cached_image_data %>
+        <%= f.file_field :image, class: 'form-control' %>
+    </div>
+    
     <div class="form-group">
         <%= f.label :first_name %>
         <%= f.text_field :first_name, class: 'form-control' %>
@@ -7,10 +14,7 @@
         <%= f.label :last_name %>
         <%= f.text_field :last_name, class: 'form-control' %>
     </div>
-    <div class="form-group">
-        <%= f.label :logo, "logo" %>
-        <%= f.file_field :logo, class: 'form-control' %>
-    </div>
+
     <div class="form-group">
         <%= f.label :job_title %>
         <%= f.select :job_title, ['Developer', 'Entrepreneur', 'Investor'], {}, class: 'form-control' %>
@@ -30,4 +34,4 @@
     <div class="form-group">
         <%= f.submit "Update Profile", class: 'btn btn-primary' %>
     </div>
-    <% end %>
+<% end %>

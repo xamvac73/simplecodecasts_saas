@@ -1,8 +1,10 @@
-<%= image_tag @user.profile.logo.url(:medium) %>
-<%= @user.profile.first_name %> <%= @user.profile.last_name %>
-<%= @user.profile.job_title %><br/>
+<% if @user.company.image.present? %>
+ <%= image_tag @user.company.image_url %>
+<% end %> <br/>
+<%= @user.company.first_name %> <%= @user.company.last_name %> <br/>
+<%= @user.company.job_title %><br/>
 <% if current_user.plan_id == 2 %>
-    <%= @user.profile.phone_number %><br/>
-    <%= @user.profile.contact_email %><br/>
+    <%= @user.company.phone_number %><br/>
+    <%= @user.company.contact_email %><br/>
 <% end %>
-<%= @user.profile.description %><br/>
+<%= @user.company.description %><br/>

@@ -9,11 +9,13 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:development, :test]
+gem 'sqlite3'
 
 gem 'bootstrap-sass', '~> 3.3.7'
 
 gem 'jquery-rails'
+
+gem 'sassc'
 
 #use font awesome library for icons
 gem 'font-awesome-sass', '~> 5.2.0'
@@ -71,10 +73,8 @@ gem 'stripe', '>= 3.22.0'
 #use figaro to hide secret keys
 gem 'figaro', '~> 1.1.1'
 
-#use paperclip for image uploads
-gem 'paperclip', '~> 4.3.6'
-
-#use shrine for file uploads
-gem 'shrine', '~> 2.6.1'
-
 gem 'sequel', '~> 5.3.0'
+
+gem 'shrine', '~> 2.6', '>= 2.6.1'
+
+
