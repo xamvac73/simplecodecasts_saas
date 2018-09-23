@@ -1,0 +1,45 @@
+/*users show page styles*/
+.user-show-image {
+   height: 128px; 
+   width: 128px;
+}
+
+.job-title-icon {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #808080;
+    border-radius: 4px;
+    background-color: #7fff00;
+    color: #ff0000;
+    text-align: center;
+}
+
+.well.company-description {
+    color: #2f4f4f;
+    background-color: #c0c0c0;
+    border-color: #808080;
+    font-size: 15px;
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.well.contact-info {
+    color: #fff8dc;
+    background-color: #0000ff;
+    border-color: #000080;
+    font-size: 15px;
+    h3 {
+        margin-top: 0;
+    }
+}
+
+/* users index page styles*/
+.user-index-image {
+    border-radius: 50%;
+}
+
+.well.grey-bg {
+    background-color: grey;
+}

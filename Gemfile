@@ -77,4 +77,6 @@ gem 'sequel', '~> 5.3.0'
 
 gem 'shrine', '~> 2.6', '>= 2.6.1'
 
+gem 'image_processing', '~> 1.7'
 
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'

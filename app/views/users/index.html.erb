@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <ul class="list-unstyled">
+            <% @users.each do |user| %>
+                    <% if user.company %>
+                        <li>
+                            <div class="well row">
+                                <div class="col-sm-4 text-center">
+                                    <% if user.company.image %>
+                                        <%= link_to user do %>
+                                            <%= image_tag user.company.image_url(:small), class: 'user-index-image' %>
+                                        <% end %>
+                                    <% end %>
+                                </div>
+
+                                <div>
+                                    <%= link_to user do %>
+                                        <h2><%= user.company.first_name %> <%= user.company.last_name %></h2>
+                                    <% end %>
+                                    <p><%= user.company.job_title %></p>
+                                </div>
+                            </div>
+                        </li>
+                    <% end %>
+            <% end %>
+        </ul>
+    </div>
+</div>

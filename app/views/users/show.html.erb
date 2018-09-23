@@ -1,10 +1,18 @@
-<% if @user.company.image.present? %>
- <%= image_tag @user.company.image_url %>
-<% end %> <br/>
-<%= @user.company.first_name %> <%= @user.company.last_name %> <br/>
-<%= @user.company.job_title %><br/>
-<% if current_user.plan_id == 2 %>
-    <%= @user.company.phone_number %><br/>
-    <%= @user.company.contact_email %><br/>
-<% end %>
-<%= @user.company.description %><br/>
+<div class="row text-center">
+    <%= image_tag @user.company.image_url(:small), class: 'user-index-image' %>
+    <br/>
+    <h1><%= @user.company.first_name %> <%= @user.company.last_name %></h1> 
+    <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= @user.company.job_title %><h3>
+    <div class="well company-description">
+        <h3>Description</h3>
+        <%= @user.company.description %><br/> 
+    </div>
+    <% if current_user.plan_id == 2 %>
+        <div class="well contact-info">
+            <h3>Contact Info</h3>
+            <p>phone no: <%= @user.company.phone_number %></p>
+            <p>email: <%= @user.company.contact_email %></p>
+        </div>
+    <end>
+    <% end %>
+</div>
