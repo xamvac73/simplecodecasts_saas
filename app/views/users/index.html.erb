@@ -8,7 +8,7 @@
                                 <div class="col-sm-4 text-center">
                                     <% if user.company.image %>
                                         <%= link_to user do %>
-                                            <%= image_tag user.company.image_url(:small), class: 'user-index-image' %>
+                                            <%= image_tag user.company.image_url(:thumb), class: 'user-index-image' %>
                                         <% end %>
                                     <% end %>
                                 </div>
@@ -17,7 +17,12 @@
                                     <%= link_to user do %>
                                         <h2><%= user.company.first_name %> <%= user.company.last_name %></h2>
                                     <% end %>
-                                    <p><%= user.company.job_title %></p>
+                                    <p>
+                                    <%= user.company.job_title %>
+                                    <% if user.plan_id == 2 %>
+                                        <span class="label label-danger">PRO</span>
+                                    <% end %>
+                                    </p>
                                 </div>
                             </div>
                         </li>

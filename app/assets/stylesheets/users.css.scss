@@ -1,7 +1,9 @@
 /*users show page styles*/
 .user-show-image {
-   height: 128px; 
-   width: 128px;
+   height: 250px; 
+   width: 250px;
+   border-radius: 50%;
+
 }
 
 .job-title-icon {
@@ -38,6 +40,8 @@
 /* users index page styles*/
 .user-index-image {
     border-radius: 50%;
+    height: 128px; 
+    width: 128px;
 }
 
 .well.grey-bg {

@@ -80,3 +80,11 @@ gem 'shrine', '~> 2.6', '>= 2.6.1'
 gem 'image_processing', '~> 1.7'
 
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
+
+gem 'fastimage', '~> 2.1', '>= 2.1.4'
+
+gem 'marcel', '~> 0.3.3'
+
+gem 'mime-types', '~> 3.2', '>= 3.2.2'
+
+gem 'mini_mime', '~> 1.0', '>= 1.0.1'

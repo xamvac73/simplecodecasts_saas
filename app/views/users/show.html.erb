@@ -1,5 +1,5 @@
 <div class="row text-center">
-    <%= image_tag @user.company.image_url(:small), class: 'user-index-image' %>
+    <%= image_tag @user.company.image_url(:thumb), class: 'user-show-image' %>
     <br/>
     <h1><%= @user.company.first_name %> <%= @user.company.last_name %></h1> 
     <h3><span class="job-title-icon"><%= job_title_icon %></span> <%= @user.company.job_title %><h3>
